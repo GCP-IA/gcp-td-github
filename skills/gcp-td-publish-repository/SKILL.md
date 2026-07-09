@@ -1,4 +1,4 @@
-﻿---
+---
 name: gcp-td-publish-repository
 description: Use when the user asks to create or update a GCP-IA repository from a local folder, including short plugin prompts such as start, inicio, init, publicar, crear repo, subir repo, or actualizar repo. Always run security analysis, correction, and safe publish sequencing before pushing repository files.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: gcp-td-security-guardrails
 description: Security pre-check and fix guidance for GCP-IA GitHub repository creation or updates before publishing with Git and GitHub CLI.
 ---

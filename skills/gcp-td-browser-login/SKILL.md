@@ -1,4 +1,4 @@
-﻿---
+---
 name: gcp-td-browser-login
 description: Use when the user needs to connect GitHub for the GCP-IA plugin through GitHub CLI browser authentication without installing tools or requesting administrator rights.
 ---
