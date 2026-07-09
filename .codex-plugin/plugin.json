@@ -1,0 +1,46 @@
+﻿{
+    "name":  "gcp-td-github",
+    "version":  "1.0.1+codex.20260709111742",
+    "description":  "V1.0.1 - Secure GCP-IA GitHub publishing with browser login, repository creation, updates, and centralized Vercel workflow enforcement.",
+    "author":  {
+                   "name":  "Grupo Casa Pellas"
+               },
+    "homepage":  "https://github.com/GCP-IA",
+    "repository":  "https://github.com/GCP-IA",
+    "license":  "MIT",
+    "keywords":  [
+                     "github",
+                     "gcp-td",
+                     "security",
+                     "vulnerability-review",
+                     "actions"
+                 ],
+    "skills":  "./skills/",
+    "interface":  {
+                      "displayName":  "GCP-IA DevSecOps Publisher V1.0.1",
+                      "shortDescription":  "V1.0.1 - Publish GCP-IA repos with security gates and Vercel automation.",
+                      "longDescription":  "V1.0.1. Use this plugin to publish projects to GitHub under the GCP-IA organization only. Short prompts such as start, inicio, or init run the full secure sequence: validate tools and authentication, analyze and correct local security blockers, download the centralized Vercel security workflow and DevSecOps scripts from GCP-IA/.github, create missing repositories in GCP-IA, update existing repositories, push the workflow and scripts first, and publish remaining files only after security validation passes. The centralized workflow can add deployment controls such as Vercel Edge perimeter protection before production deploys. It never creates repositories under a personal account and never installs tools or requests administrator rights.",
+                      "developerName":  "Grupo Casa Pellas",
+                      "category":  "Developer Tools",
+                      "capabilities":  [
+                                           "Interactive",
+                                           "Write",
+                                           "Code Review"
+                                       ],
+                      "websiteURL":  "https://github.com/GCP-IA",
+                      "privacyPolicyURL":  "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement",
+                      "termsOfServiceURL":  "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+                      "defaultPrompt":  [
+                                            "Inicio seguro",
+                                            "Start",
+                                            "Crear o actualizar repo",
+                                            "Conectar GitHub"
+                                        ],
+                      "brandColor":  "#0F766E",
+                      "composerIcon":  "./assets/gcp-td-github.svg",
+                      "logo":  "./assets/gcp-td-github.svg",
+                      "screenshots":  [
+
+                                      ]
+                  }
+}
