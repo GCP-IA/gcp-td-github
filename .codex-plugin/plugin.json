@@ -1,7 +1,7 @@
 {
   "name": "gcp-ia-github",
-  "version": "1.0.2+codex.20260716194500",
-  "description": "V1.0.2 - Secure GCP-IA GitHub publishing with browser login, repository creation, updates, and centralized Vercel workflow enforcement.",
+  "version": "1.0.3+codex.20260716195000",
+  "description": "V1.0.3 - Secure GCP-IA GitHub publishing with browser login, repository creation, updates, and centralized Vercel workflow enforcement.",
   "author": {
     "name": "Grupo Casa Pellas"
   },
@@ -17,9 +17,9 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "GCP-IA DevSecOps Publisher V1.0.2",
-    "shortDescription": "V1.0.2 - Publish GCP-IA repos with security gates and Vercel automation.",
-    "longDescription": "V1.0.2. Use this plugin to publish projects to GitHub under the GCP-IA organization only. Short prompts such as start, inicio, or init run the full secure sequence: validate tools and authentication, analyze and correct local security blockers, download the centralized Vercel security workflow and DevSecOps scripts from GCP-IA/.github, create missing repositories in GCP-IA, update existing repositories, push the workflow and scripts first, and publish remaining files only after security validation passes. The centralized workflow can add deployment controls such as Vercel Edge perimeter protection before production deploys. It never creates repositories under a personal account and never installs tools or requests administrator rights.",
+    "displayName": "GCP-IA DevSecOps Publisher V1.0.3",
+    "shortDescription": "V1.0.3 - Publish GCP-IA repos with security gates and Vercel automation.",
+    "longDescription": "V1.0.3. Use this plugin to publish projects to GitHub under the GCP-IA organization only. Short prompts such as start, inicio, or init run the full secure sequence: validate tools and authentication, analyze and correct local security blockers, download the centralized Vercel security workflow and DevSecOps scripts from GCP-IA/.github, create missing repositories in GCP-IA, update existing repositories, push the workflow and scripts first, and publish remaining files only after security validation passes. The centralized workflow can add deployment controls such as Vercel Edge perimeter protection before production deploys. It never creates repositories under a personal account and never installs tools or requests administrator rights.",
     "developerName": "Grupo Casa Pellas",
     "category": "Developer Tools",
     "capabilities": [
@@ -37,8 +37,8 @@
       "Conectar GitHub"
     ],
     "brandColor": "#0F766E",
-    "composerIcon": "./assets/gcp-td-github.svg",
-    "logo": "./assets/gcp-td-github.svg",
+    "composerIcon": "./assets/gcp-ia-github.svg",
+    "logo": "./assets/gcp-ia-github.svg",
     "screenshots": []
   }
 }

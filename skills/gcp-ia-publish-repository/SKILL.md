@@ -1,5 +1,5 @@
 ---
-name: gcp-td-publish-repository
+name: gcp-ia-publish-repository
 description: Use when the user asks to create or update a GCP-IA repository from a local folder, including short plugin prompts such as start, inicio, init, publicar, crear repo, subir repo, or actualizar repo. Always run security analysis, correction, and safe publish sequencing before pushing repository files.
 ---
 
@@ -39,18 +39,18 @@ Do not publish vulnerable code. If a blocker cannot be safely fixed, stop with t
 Windows PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action ValidateTools
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action AuthStatus
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action ValidateTools
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action AuthStatus
 ```
 
 macOS/Linux Bash:
 
 ```bash
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action ValidateTools
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action AuthStatus
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action ValidateTools
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action AuthStatus
 ```
 
-2. If authentication is missing, use `gcp-td-browser-login`.
+2. If authentication is missing, use `gcp-ia-browser-login`.
 3. Inspect the local project and fix obvious security blockers:
    - remove tracked `.env` files from Git;
    - keep `.env` local and ignored;
@@ -64,13 +64,13 @@ bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action AuthStatus
 Windows PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action Start -Name "<repo-name>"
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action Start -Name "<repo-name>"
 ```
 
 macOS/Linux Bash:
 
 ```bash
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action start --name "<repo-name>"
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action start --name "<repo-name>"
 ```
 
 The script creates `GCP-IA/<repo-name>` when missing, updates it when it already exists, and publishes in two stages:

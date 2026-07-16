@@ -1,5 +1,5 @@
 ---
-name: gcp-td-vercel-security-workflow
+name: gcp-ia-vercel-security-workflow
 description: Synchronize the centralized GCP-IA Vercel security workflow from GCP-IA/.github before creating or updating repositories.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: gcp-td-browser-login
+name: gcp-ia-browser-login
 description: Use when the user needs to connect GitHub for the GCP-IA plugin through GitHub CLI browser authentication without installing tools or requesting administrator rights.
 ---
 
@@ -22,17 +22,17 @@ From the project folder, run the native script for the current operating system.
 Windows PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action ValidateTools
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action Login
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action AuthStatus
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action ValidateTools
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action Login
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action AuthStatus
 ```
 
 macOS/Linux Bash:
 
 ```bash
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action ValidateTools
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action Login
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action AuthStatus
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action ValidateTools
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action Login
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action AuthStatus
 ```
 
 Only if the user explicitly asks to switch accounts or re-enter credentials, use:
@@ -40,15 +40,15 @@ Only if the user explicitly asks to switch accounts or re-enter credentials, use
 Windows PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action ForceLogin
-powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-td-repo.ps1" -Action AuthStatus
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action ForceLogin
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE/plugins/gcp-ia-github/scripts/gcp-ia-repo.ps1" -Action AuthStatus
 ```
 
 macOS/Linux Bash:
 
 ```bash
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action ForceLogin
-bash "$HOME/plugins/gcp-ia-github/scripts/gcp-td-repo.sh" --action AuthStatus
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action ForceLogin
+bash "$HOME/plugins/gcp-ia-github/scripts/gcp-ia-repo.sh" --action AuthStatus
 ```
 ## Persistence
 
