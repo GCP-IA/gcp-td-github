@@ -11,7 +11,7 @@ scripts/
 skills/
 ```
 
-This branch contains only the `gcp-td-github` plugin configured to create and
+This branch contains only the `gcp-ia-github` plugin configured to create and
 update repositories in the `GCP-IA` GitHub organization.
 
 ## Casa Pellas workspace releases
